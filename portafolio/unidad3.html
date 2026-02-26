@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Unidad 3</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b1120;
+color:white;
+}
+
+header{
+padding:40px;
+text-align:center;
+background:linear-gradient(90deg,#2563eb,#38bdf8);
+}
+
+.container{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.intro{
+grid-column:1/-1;
+background:#1e293b;
+padding:30px;
+border-radius:18px;
+line-height:1.7;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+color:#38bdf8;
+margin-top:0;
+}
+
+.card p, .card li{
+font-size:14px;
+line-height:1.6;
+}
+
+.lista{
+padding-left:20px;
+}
+
+.final{
+grid-column:1/-1;
+background:#0f172a;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+}
+
+.btn{
+display:block;
+width:200px;
+margin:40px auto;
+text-align:center;
+padding:12px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:20px;
+opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Unidad 3</h1>
+<p>Frameworks y Desarrollo de APIs</p>
+</header>
+
+<section class="container">
+
+<div class="intro">
+En esta unidad se desarrolla una investigación amplia sobre los frameworks utilizados en el desarrollo de aplicaciones orientadas a servicios, así como el proceso completo para el diseño, implementación y gestión de APIs. Estos elementos son fundamentales en la arquitectura moderna basada en servicios, permitiendo la creación de sistemas escalables, reutilizables y eficientes.
+</div>
+
+<div class="card">
+<h2>📌 Frameworks en aplicaciones orientadas a servicios</h2>
+
+<p>
+Un framework es un conjunto estructurado de herramientas, bibliotecas y buenas prácticas que facilitan el desarrollo de software. En el contexto de aplicaciones orientadas a servicios, los frameworks permiten construir servicios web, microservicios y APIs de forma organizada y estandarizada.
+</p>
+
+<p>
+Estos frameworks proporcionan funcionalidades predefinidas como manejo de rutas, conexión a bases de datos, autenticación, seguridad, serialización de datos y gestión de peticiones HTTP.
+</p>
+
+<p>
+El uso de frameworks reduce el tiempo de desarrollo, mejora la mantenibilidad del código y promueve el uso de patrones arquitectónicos adecuados.
+</p>
+
+</div>
+
+<div class="card">
+<h2>🛠 Principales frameworks utilizados</h2>
+
+<ul class="lista">
+<li><strong>Spring Boot:</strong> Framework de Java ampliamente usado para crear microservicios y aplicaciones empresariales escalables.</li>
+<li><strong>.NET Core / ASP.NET:</strong> Plataforma de Microsoft para el desarrollo de APIs robustas y seguras.</li>
+<li><strong>Express.js:</strong> Framework minimalista para Node.js enfocado en la creación rápida de APIs REST.</li>
+<li><strong>Django y Django REST Framework:</strong> Utilizados en Python para desarrollar servicios web seguros y bien estructurados.</li>
+<li><strong>Laravel:</strong> Framework PHP moderno que permite construir APIs con arquitectura limpia.</li>
+</ul>
+
+<p>
+Cada framework ofrece herramientas específicas para la implementación de servicios REST, autenticación mediante tokens, controladores, validaciones y gestión de bases de datos.
+</p>
+
+</div>
+
+<div class="card">
+<h2>🌐 Importancia de los frameworks en SOA</h2>
+
+<p>
+En arquitecturas orientadas a servicios, los frameworks facilitan la implementación de principios como bajo acoplamiento, reutilización y modularidad.
+</p>
+
+<p>
+Permiten dividir una aplicación en microservicios independientes que pueden desplegarse y escalarse de manera autónoma.
+</p>
+
+<p>
+También integran mecanismos de seguridad como OAuth, JWT y cifrado de datos, fundamentales en aplicaciones distribuidas.
+</p>
+
+</div>
+
+<div class="card">
+<h2>📍 ¿Qué es una API?</h2>
+
+<p>
+Una API (Application Programming Interface) es un conjunto de reglas y protocolos que permiten la comunicación entre diferentes sistemas de software.
+</p>
+
+<p>
+En el desarrollo orientado a servicios, las APIs actúan como intermediarias que exponen funcionalidades específicas para que otras aplicaciones puedan consumirlas.
+</p>
+
+<p>
+Las APIs pueden ser REST, SOAP o GraphQL, dependiendo del estilo arquitectónico utilizado.
+</p>
+
+</div>
+
+<div class="card">
+<h2>⚙ Proceso de desarrollo de una API</h2>
+
+<p><strong>1. Análisis y planificación:</strong> Se identifican los requerimientos del sistema, los recursos que se expondrán y los usuarios que consumirán la API.</p>
+
+<p><strong>2. Diseño:</strong> Se definen los endpoints, métodos HTTP (GET, POST, PUT, DELETE), estructura de datos y modelo de seguridad.</p>
+
+<p><strong>3. Implementación:</strong> Se desarrolla la lógica del servicio utilizando un framework adecuado y se conecta con bases de datos o sistemas externos.</p>
+
+<p><strong>4. Pruebas:</strong> Se realizan pruebas unitarias y de integración para verificar el correcto funcionamiento.</p>
+
+<p><strong>5. Documentación:</strong> Se documentan los endpoints utilizando herramientas como Swagger o Postman.</p>
+
+<p><strong>6. Despliegue:</strong> Se publica la API en un servidor o plataforma en la nube.</p>
+
+<p><strong>7. Mantenimiento:</strong> Se actualiza, monitorea y optimiza la API conforme evolucionan los requerimientos.</p>
+
+</div>
+
+<div class="card">
+<h2>🔐 Seguridad en APIs</h2>
+
+<p>
+La seguridad es un aspecto fundamental en el desarrollo de APIs. Se implementan mecanismos como autenticación mediante tokens JWT, OAuth 2.0, cifrado HTTPS y control de acceso basado en roles.
+</p>
+
+<p>
+También es importante validar datos de entrada para prevenir ataques como inyección SQL o ataques de tipo Cross-Site Scripting (XSS).
+</p>
+
+</div>
+
+<div class="final">
+Conclusión: Los frameworks y el proceso estructurado de desarrollo de APIs constituyen elementos esenciales en la arquitectura orientada a servicios. Su correcta implementación permite crear aplicaciones modernas, escalables y seguras, capaces de integrarse con múltiples sistemas y adaptarse a los cambios tecnológicos actuales.
+</div>
+
+</section>
+
+<a class="btn" href="index.html">← Volver al portafolio</a>
+
+<footer>
+Unidad 3 – Frameworks y Desarrollo de APIs
+</footer>
+
+</body>
+</html>
