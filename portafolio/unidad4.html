@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Unidad 4</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b1120;
+color:white;
+}
+
+header{
+padding:40px;
+text-align:center;
+background:linear-gradient(90deg,#2563eb,#38bdf8);
+}
+
+.container{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+color:#38bdf8;
+}
+
+.card p{
+line-height:1.6;
+font-size:14px;
+margin-bottom:10px;
+}
+
+.btn{
+display:block;
+width:150px;
+margin:40px auto;
+text-align:center;
+padding:12px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:20px;
+opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Unidad 4</h1>
+<h3>Aplicación Web y Validación de la Solución</h3>
+</header>
+
+<section class="container">
+
+<div class="card">
+<h2>Aplicación Web</h2>
+
+<p>
+Una aplicación web es un sistema de software que se ejecuta en un servidor y es accesible a través de un navegador web mediante Internet o una red local. A diferencia de las aplicaciones tradicionales que requieren instalación en un dispositivo, las aplicaciones web funcionan directamente desde el navegador, lo que permite su uso en múltiples plataformas como computadoras, tablets y smartphones.
+</p>
+
+<p>
+Estas aplicaciones están compuestas principalmente por dos partes: el frontend, que es la interfaz con la que interactúa el usuario, y el backend, que gestiona la lógica del sistema, el procesamiento de datos y la conexión con bases de datos. El frontend utiliza tecnologías como HTML, CSS y JavaScript, mientras que el backend puede desarrollarse con lenguajes como JavaScript (Node.js), Python, PHP o Java.
+</p>
+
+<p>
+Las aplicaciones web modernas suelen seguir arquitecturas como cliente-servidor o modelos más avanzados como microservicios. Además, utilizan APIs para comunicarse entre diferentes sistemas y servicios, lo que permite una mayor modularidad y escalabilidad.
+</p>
+
+<p>
+Entre las principales ventajas de las aplicaciones web se encuentran la accesibilidad desde cualquier lugar, la facilidad de actualización (ya que los cambios se realizan en el servidor), la reducción de costos de instalación y mantenimiento, así como la posibilidad de integración con otros servicios.
+</p>
+
+<p>
+También presentan desafíos como la dependencia de la conexión a Internet, la seguridad de la información y la necesidad de optimizar el rendimiento para garantizar una buena experiencia de usuario.
+</p>
+
+</div>
+
+<div class="card">
+<h2>Plan de pruebas</h2>
+
+<p>
+El plan de pruebas es un documento fundamental dentro del desarrollo de software que define la estrategia, los recursos, el alcance y las actividades necesarias para verificar que una aplicación cumple con los requisitos establecidos. Su objetivo principal es asegurar la calidad del sistema antes de su implementación final.
+</p>
+
+<p>
+Este plan incluye la identificación de los módulos a probar, los tipos de pruebas a realizar, los criterios de entrada y salida, así como los responsables de cada actividad. También contempla el entorno de pruebas, las herramientas utilizadas y los tiempos estimados para cada fase.
+</p>
+
+<p>
+Existen diversos tipos de pruebas que pueden formar parte del plan, tales como pruebas unitarias, que verifican componentes individuales; pruebas de integración, que validan la interacción entre módulos; pruebas funcionales, que comprueban el cumplimiento de requisitos; y pruebas de rendimiento, que evalúan la capacidad del sistema bajo diferentes cargas.
+</p>
+
+<p>
+Además, el plan de pruebas debe incluir casos de prueba detallados, los cuales describen paso a paso las acciones a realizar, los datos de entrada y los resultados esperados. Esto permite una evaluación sistemática y repetible del sistema.
+</p>
+
+<p>
+Un buen plan de pruebas contribuye a reducir errores, mejorar la calidad del producto y garantizar que la aplicación cumpla con las expectativas del usuario final.
+</p>
+
+</div>
+
+<div class="card">
+<h2>Criterios de aceptación</h2>
+
+<p>
+Los criterios de aceptación son condiciones específicas que un sistema o funcionalidad debe cumplir para ser considerado como completo y aceptado por el cliente o usuario final. Estos criterios se definen generalmente durante la fase de análisis de requisitos y sirven como referencia para validar el correcto funcionamiento del sistema.
+</p>
+
+<p>
+Estos criterios deben ser claros, medibles y verificables. Por ejemplo, un criterio de aceptación puede establecer que un usuario debe poder registrarse en el sistema con un correo válido y recibir una confirmación en menos de cierto tiempo.
+</p>
+
+<p>
+Los criterios de aceptación permiten al equipo de desarrollo comprender exactamente qué se espera del sistema, evitando ambigüedades y reduciendo la probabilidad de errores. También facilitan el proceso de pruebas, ya que sirven como base para la creación de casos de prueba.
+</p>
+
+<p>
+Existen diferentes enfoques para definir criterios de aceptación, como el uso de historias de usuario o el formato Given-When-Then, que describe el contexto, la acción y el resultado esperado.
+</p>
+
+<p>
+El cumplimiento de estos criterios es fundamental para asegurar que la solución desarrollada satisface las necesidades del usuario y cumple con los objetivos del proyecto.
+</p>
+
+</div>
+
+<div class="card">
+<h2>Resultados obtenidos de las pruebas</h2>
+
+<p>
+Los resultados de las pruebas representan la evidencia del funcionamiento del sistema una vez ejecutados los casos de prueba definidos en el plan. Estos resultados permiten identificar errores, validar funcionalidades y evaluar el desempeño general de la aplicación.
+</p>
+
+<p>
+Durante esta fase se documentan los comportamientos observados, comparándolos con los resultados esperados. Si existe una coincidencia, la prueba se considera exitosa; en caso contrario, se registra un defecto que deberá ser corregido.
+</p>
+
+<p>
+Los resultados también pueden incluir métricas como el número de pruebas ejecutadas, el porcentaje de éxito, los errores encontrados y el tiempo de respuesta del sistema. Esta información es clave para tomar decisiones sobre la liberación del producto.
+</p>
+
+<p>
+En muchos casos, los resultados de las pruebas se documentan en reportes detallados que incluyen evidencias como capturas de pantalla, registros de errores y observaciones del equipo de pruebas.
+</p>
+
+<p>
+El análisis de estos resultados permite mejorar la calidad del software, identificar áreas de mejora y garantizar que el sistema funcione correctamente antes de su implementación.
+</p>
+
+</div>
+
+<div class="card">
+<h2>Aprobación de la solución</h2>
+
+<p>
+La aprobación de la solución es la etapa final del proceso de desarrollo, en la cual se valida que el sistema cumple con todos los requisitos establecidos y está listo para su implementación o entrega al cliente.
+</p>
+
+<p>
+Esta aprobación se basa en la revisión de los resultados de las pruebas, el cumplimiento de los criterios de aceptación y la evaluación general del sistema. En muchos casos, el cliente o usuario final participa en esta fase mediante pruebas de aceptación del usuario.
+</p>
+
+<p>
+Una vez que se confirma que la solución es funcional, segura y cumple con los objetivos del proyecto, se procede a su aprobación formal. Esto puede implicar la firma de documentos, la validación por parte de un comité o la autorización para su despliegue en producción.
+</p>
+
+<p>
+La aprobación de la solución garantiza que el sistema está listo para ser utilizado en un entorno real, minimizando riesgos y asegurando la satisfacción del cliente.
+</p>
+
+<p>
+Además, esta etapa permite cerrar el ciclo de desarrollo y dar paso a actividades de mantenimiento, soporte y mejora continua del sistema.
+</p>
+
+</div>
+
+</section>
+
+<a class="btn" href="index.html">Volver</a>
+
+<footer>
+Unidad 4 – Aplicación Web y Validación de la Solución
+</footer>
+
+</body>
+</html>
